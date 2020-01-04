@@ -43,7 +43,8 @@ async def event_friend_message(message):
 
     if args[0] == '!playlist':
         playlist = await ScuffedAPI.get_banners(name=content)
-        await client.user.party.set_playlist(playlist=args[0])
+        await client.user.party.set_playlist(playlist=playlist.id)
+        
 client.run()
 ```
 
