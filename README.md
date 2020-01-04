@@ -14,7 +14,7 @@ import ScuffedAPI
 import asyncio
 
 async def arrow():
-    banner = await ScuffedAPI.get_banners(name="Arrow")
+    banner = await ScuffedAPI.get_banner(name="Arrow")
     print(banner.id)
 
 loop = asyncio.get_event_loop()
